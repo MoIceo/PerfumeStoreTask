@@ -100,6 +100,27 @@ namespace WebApi.Controllers
             return NoContent();
         }
 
+        [HttpGet("login")]
+        public IActionResult Login(string login, string password)
+        {
+            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+            {
+                return BadRequest("Логин и пароль обязательны.");
+            }
+            var user = _context.Users.FirstOrDefault(u => u.UserLogin == login && u.UserPassword == password);
+
+            if (user != null)
+            {
+                // Если пользователь найден, возвращаем данные пользователя с кодом 200 (OK)
+                return Ok(user);
+            }
+            else
+            {
+                // Если пользователь не найден, возвращаем код 401 (Unauthorized)
+                return Unauthorized("Неверный логин или пароль.");
+            }
+        }
+
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);

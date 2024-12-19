@@ -19,91 +19,93 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Border Style="{StaticResource ProductBorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <!-- Верхняя панель -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
-            <TextBlock x:Name="FullNameTextBlock" Text="Гость" Margin="0,0,10,0" VerticalAlignment="Center"/>
-            <Button Content="Выйти" Style="{StaticResource ActionButtonStyle}" Width="80" Height="30" Click="LogoutButton_Click"/>
-        </StackPanel>
-
-        <!-- Панель фильтров -->
-        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="10">
-            <TextBlock Text="{Binding DisplayedProductCount}" FontWeight="Bold" Margin="0,0,0,5"/>
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
-                <!-- Поле для поиска -->
-                <Grid>
-                    <TextBox Width="200" Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Text="Поиск..." IsHitTestVisible="False" Foreground="Gray" 
-                               VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
-                               Visibility="{Binding SearchQuery, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
-                </Grid>
-
-                <!-- Сортировка по производителю -->
-                <ComboBox Width="200" ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding SelectedManufacturer}"/>
-
-                <!-- Мин. цена -->
-                <Grid Margin="10,0,0,0">
-                    <TextBox Width="80" Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Text="Мин. цена" IsHitTestVisible="False" Foreground="Gray" 
-                               VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
-                               Visibility="{Binding MinPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
-                </Grid>
-
-                <!-- Макс. цена -->
-                <Grid Margin="10,0,0,0">
-                    <TextBox Width="80" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}"/>
-                    <TextBlock Text="Макс. цена" IsHitTestVisible="False" Foreground="Gray" 
-                               VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
-                               Visibility="{Binding MaxPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
-                </Grid>
-
-                <!-- Сортировка -->
-                <ComboBox Width="150" ItemsSource="{Binding SortOptions}" SelectedItem="{Binding SelectedSortOption}"/>
+            <!-- Верхняя панель -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock x:Name="FullNameTextBlock" Text="Гость" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <Button x:Name="LoginButton" Content="Войти" Style="{StaticResource ActionButtonStyle}" Width="80" Height="30" Click="LoginButton_Click"/>
             </StackPanel>
-        </StackPanel>
 
-        <!-- Список продуктов -->
-        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemsSource="{Binding FilteredProducts}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border Style="{StaticResource ProductBorderStyle}">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
+            <!-- Панель фильтров -->
+            <StackPanel Grid.Row="1" Orientation="Vertical" Margin="10">
+                <TextBlock Text="{Binding DisplayedProductCount}" FontWeight="Bold" Margin="0,0,0,5"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <!-- Поле для поиска -->
+                    <Grid>
+                        <TextBox Width="200" Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="Поиск..." IsHitTestVisible="False" Foreground="Gray" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
+                                   Visibility="{Binding SearchQuery, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                    </Grid>
 
-                                <Grid Grid.Column="0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
-                                    </Grid.RowDefinitions>
-                                    <TextBlock Text="{Binding ProductName}" FontWeight="Bold" Grid.Row="0"/>
-                                    <TextBlock Text="{Binding ProductDescription}" Grid.Row="1"/>
-                                    <StackPanel Orientation="Horizontal" Grid.Row="2">
-                                        <TextBlock Text="Производитель: "/>
-                                        <TextBlock Text="{Binding ProductManufacturer}"/>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Horizontal" Grid.Row="3">
-                                        <TextBlock Text="Цена: "/>
-                                        <TextBlock Text="{Binding ProductCost}"/>
-                                    </StackPanel>
+                    <!-- Сортировка по производителю -->
+                    <ComboBox Width="200" ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding SelectedManufacturer}"/>
+
+                    <!-- Мин. цена -->
+                    <Grid Margin="10,0,0,0">
+                        <TextBox Width="80" Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="Мин. цена" IsHitTestVisible="False" Foreground="Gray" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
+                                   Visibility="{Binding MinPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                    </Grid>
+
+                    <!-- Макс. цена -->
+                    <Grid Margin="10,0,0,0">
+                        <TextBox Width="80" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBlock Text="Макс. цена" IsHitTestVisible="False" Foreground="Gray" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
+                                   Visibility="{Binding MaxPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
+                    </Grid>
+
+                    <!-- Сортировка -->
+                    <ComboBox Width="150" ItemsSource="{Binding SortOptions}" SelectedItem="{Binding SelectedSortOption}"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Список продуктов -->
+            <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding FilteredProducts}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource ProductBorderStyle}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Text="{Binding ProductName}" FontWeight="Bold" Grid.Row="0"/>
+                                        <TextBlock Text="{Binding ProductDescription}" Grid.Row="1"/>
+                                        <StackPanel Orientation="Horizontal" Grid.Row="2">
+                                            <TextBlock Text="Производитель: "/>
+                                            <TextBlock Text="{Binding ProductManufacturer}"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" Grid.Row="3">
+                                            <TextBlock Text="Цена: "/>
+                                            <TextBlock Text="{Binding ProductCost}"/>
+                                        </StackPanel>
+                                    </Grid>
+                                    <Button Content="Заказать" Style="{StaticResource ActionButtonStyle}" Grid.Column="1" Margin="10,0,0,0"/>
                                 </Grid>
-                                <Button Content="Заказать" Style="{StaticResource ActionButtonStyle}" Grid.Column="1" Margin="10,0,0,0"/>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </ScrollViewer>
-    </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+    </Border>
 </Page>

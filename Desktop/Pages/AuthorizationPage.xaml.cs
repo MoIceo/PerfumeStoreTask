@@ -20,20 +20,16 @@ namespace Store.Pages
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string login = LoginTextBox.Text;
-            string password = PasswordBox.Password;
-
-            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(LoginTextBox.Text) || string.IsNullOrEmpty(PasswordBox.Password))
             {
-                ErrorMessageTextBlock.Text = "Пожалуйста, введите логин и пароль.";
+                ErrorMessageTextBlock.Text = "Введите логин и пароль.";
                 return;
             }
 
-            User user = await _userService.AuthenticateUserAsync(login, password);
+            User user = await _userService.AuthenticateUserAsync(LoginTextBox.Text, PasswordBox.Password);
 
             if (user != null)
             {
-                //  Сохраняем данные пользователя (в данном примере в свойство Application)
                 Application.Current.Properties["CurrentUser"] = user;
                 NavigationService?.Navigate(new ShopPage());
             }
@@ -41,6 +37,12 @@ namespace Store.Pages
             {
                 ErrorMessageTextBlock.Text = "Неверный логин или пароль.";
             }
+        }
+
+        private void ContinueAsGuestButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Properties["CurrentUser"] = null;
+            NavigationService?.Navigate(new ShopPage());
         }
     }
 }

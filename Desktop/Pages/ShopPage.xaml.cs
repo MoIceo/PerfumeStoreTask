@@ -25,16 +25,34 @@ namespace Store.Pages
         {
             InitializeComponent();
             var currentUser = Application.Current.Properties["CurrentUser"] as User;
+            UpdateLoginButton(currentUser);
+
             if (currentUser != null)
             {
                 FullNameTextBlock.Text = $"{currentUser.UserSurname} {currentUser.UserName} {currentUser.UserPatronymic}";
             }
+            else
+            {
+                FullNameTextBlock.Text = "Гость";
+            }
+        }
+        private void UpdateLoginButton(User? currentUser)
+        {
+            if (currentUser == null)
+                LoginButton.Content = "Войти";
+            else
+                LoginButton.Content = "Выйти";
         }
 
-        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Properties["CurrentUser"] = null;
-            NavigationService.Navigate(new AuthorizationPage());
+            var currentUser = Application.Current.Properties["CurrentUser"] as User;
+
+            if (currentUser == null)
+                NavigationService.Navigate(new AuthorizationPage());
+            else
+                Application.Current.Properties["CurrentUser"] = null;
+                NavigationService.Navigate(new AuthorizationPage());
         }
     }
 }

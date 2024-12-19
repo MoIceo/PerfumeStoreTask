@@ -24,37 +24,17 @@ namespace StoreLibrary.Services
             {
                 var response = await _client.GetAsync($"Users/login?login={login}&password={password}");
                 response.EnsureSuccessStatusCode();
-                return await response.Content.ReadFromJsonAsync<User>();
+                string responseString = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Response: {responseString}");
+
+                var user = await response.Content.ReadFromJsonAsync<User>();
+                return user;
             }
             catch (HttpRequestException ex)
             {
                 Console.WriteLine($"Ошибка HTTP запроса: {ex.Message}");
                 return null;
             }
-        }
-        public async Task<IEnumerable<Product>> GetProductsAsync()
-        {
-            var response = await _client.GetAsync("Products/");
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<IEnumerable<Product>>();
-        }
-
-        public async Task<List<User>> GetAllUsersAsync()
-            => await _context.Users.ToListAsync();
-
-        public async Task<User?> GetUserByIdAsync(int id)
-            => await _context.Users.FirstOrDefaultAsync(u => u.UserId == id);
-
-        public async Task AddUserAsync(User user)
-        {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task UpdateUserAsync(User user)
-        {
-            _context.Users.Update(user);
-            await _context.SaveChangesAsync();
         }
     }
 }
