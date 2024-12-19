@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Desktop.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Products.xaml
+    /// Логика взаимодействия для ProdcutsPage.xaml
     /// </summary>
-    public partial class Products : Window
+    public partial class ProdcutsPage : Page
     {
-        public Products()
+        public ProdcutsPage()
         {
             InitializeComponent();
         }

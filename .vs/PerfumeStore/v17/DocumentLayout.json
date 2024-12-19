@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\PerfumeStoreTask\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\OrderService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:07:06.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PickupPointService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\PickupPointService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\PickupPointService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:06:54.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\UserService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\UserService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:06:33.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\ProductService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:06:08.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\ProductCategory.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductCategory.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:05:58.458Z",
+              "EditorCaption": ""
             }
           ]
         }
