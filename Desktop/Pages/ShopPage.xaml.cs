@@ -1,4 +1,5 @@
-﻿using StoreLibrary.Models;
+﻿using Desktop.Pages;
+using StoreLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,11 @@ namespace Store.Pages
             else
                 Application.Current.Properties["CurrentUser"] = null;
                 NavigationService.Navigate(new AuthorizationPage());
+        }
+
+        private void OrderPanelButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new OrderPanelPage());
         }
     }
 }

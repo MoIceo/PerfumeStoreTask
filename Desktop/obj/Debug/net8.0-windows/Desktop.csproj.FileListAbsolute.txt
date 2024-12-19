@@ -72,3 +72,5 @@ F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\refint\Desktop.dll
 F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\Desktop.pdb
 F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\Desktop.genruntimeconfig.cache
 F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\ref\Desktop.dll
+F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\Pages\OrderPanelPage.baml
+F:\PerfumeStoreTask\Desktop\obj\Debug\net8.0-windows\Pages\OrderPanelPage.g.cs

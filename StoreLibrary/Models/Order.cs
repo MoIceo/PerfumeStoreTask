@@ -13,7 +13,7 @@ public partial class Order
 
     public string OrderStatus { get; set; } = null!;
 
-    public DateTime OrderDeliveryDate { get; set; }
+    public DateTime? OrderDeliveryDate { get; set; }
 
     public DateTime OrderDate { get; set; }
 

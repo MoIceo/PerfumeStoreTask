@@ -36,6 +36,12 @@ namespace StoreLibrary.Services
                 return null;
             }
         }
+        public async Task<User> GetUserByIdAsync(int userId)
+        {
+            var response = await _client.GetAsync($"Users/{userId}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<User>();
+        }
     }
 }
 

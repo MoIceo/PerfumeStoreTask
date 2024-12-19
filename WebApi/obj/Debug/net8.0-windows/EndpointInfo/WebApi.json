@@ -1557,7 +1557,8 @@
           },
           "orderDeliveryDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "orderDate": {
             "type": "string",
