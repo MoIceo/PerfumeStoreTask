@@ -66,7 +66,7 @@ public partial class AppDbContext : DbContext
             entity.ToTable("OrderProduct");
 
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
-            entity.Property(e => e.ProductArticleNumber).ValueGeneratedOnAdd();
+            entity.Property(e => e.ProductArticleNumber).HasMaxLength(50);
             entity.Property(e => e.ProductAmount).HasMaxLength(50);
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderProducts)
@@ -94,7 +94,7 @@ public partial class AppDbContext : DbContext
 
             entity.ToTable("Product");
 
-            entity.Property(e => e.ProductArticleNumber).ValueGeneratedNever();
+            entity.Property(e => e.ProductArticleNumber).HasMaxLength(50);
             entity.Property(e => e.ProductCost).HasColumnType("decimal(19, 4)");
             entity.Property(e => e.ProductPhoto).HasColumnType("image");
 

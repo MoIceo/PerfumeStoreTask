@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 F:\PerfumeStoreTask\Desktop\App.xaml
-2410480236
+5-105420842
 
-892431205
+13-1810522514
 228310084635
-MainWindow.xaml;Pages\ProdcutsPage.xaml;
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\CreateOrderPage.xaml;Pages\OrderPage.xaml;Pages\ShopPage.xaml;
 
 True
 

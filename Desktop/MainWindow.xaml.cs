@@ -1,4 +1,4 @@
-﻿using Desktop.Pages;
+﻿using Store.Pages;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,8 +20,12 @@ namespace Desktop
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new ShopPage());
+        }
 
-            MainFrame.Navigate(new ProdcutsPage());
+        private void AuthorizationButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AuthorizationPage());
         }
     }
 }

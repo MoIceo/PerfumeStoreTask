@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Final",
+    "Projects": [
+      {
+        "Path": "WebApi\\WebApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Desktop\\Desktop.csproj",
+        "Action": "Start",
+        "DebugTarget": "Desktop"
+      }
+    ]
+  }
+]

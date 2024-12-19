@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "F:\\PerfumeStoreTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\viewmodels\\shoppageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\viewmodels\\shoppageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\pages\\shoppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\pages\\shoppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\pages\\shoppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\pages\\shoppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\converters\\emptystringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\converters\\emptystringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|f:\\perfumestoretask\\desktop\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6D14AED9-A889-470F-88AB-323C21728448}|Desktop\\Desktop.csproj|solutionrelative:desktop\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|f:\\perfumestoretask\\storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B545344E-C478-452C-BE4A-A6C7E5D2CBBE}|StoreLibrary\\StoreLibrary.csproj|solutionrelative:storelibrary\\services\\pickuppointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +54,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "StoreLibrary\\Services\\OrderService.cs",
-              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
-              "RelativeToolTip": "StoreLibrary\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:07:06.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PickupPointService.cs",
-              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
-              "RelativeDocumentMoniker": "StoreLibrary\\Services\\PickupPointService.cs",
-              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
-              "RelativeToolTip": "StoreLibrary\\Services\\PickupPointService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:06:54.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "StoreLibrary\\Services\\UserService.cs",
-              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\UserService.cs",
-              "RelativeToolTip": "StoreLibrary\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Title": "ShopPageViewModel.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\ViewModels\\ShopPageViewModel.cs",
+              "RelativeDocumentMoniker": "Desktop\\ViewModels\\ShopPageViewModel.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\ViewModels\\ShopPageViewModel.cs",
+              "RelativeToolTip": "Desktop\\ViewModels\\ShopPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:06:33.71Z",
+              "WhenOpened": "2024-12-19T14:48:32.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "StoreLibrary\\Services\\ProductService.cs",
-              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductService.cs",
-              "RelativeToolTip": "StoreLibrary\\Services\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Title": "ShopPage.xaml.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\Pages\\ShopPage.xaml.cs",
+              "RelativeDocumentMoniker": "Desktop\\Pages\\ShopPage.xaml.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\Pages\\ShopPage.xaml.cs",
+              "RelativeToolTip": "Desktop\\Pages\\ShopPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:06:08.153Z",
+              "WhenOpened": "2024-12-19T14:49:45.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Desktop",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\Desktop.csproj",
+              "RelativeDocumentMoniker": "Desktop\\Desktop.csproj",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\Desktop.csproj",
+              "RelativeToolTip": "Desktop\\Desktop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-19T14:43:28.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\App.config",
+              "RelativeDocumentMoniker": "Desktop\\App.config",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\App.config",
+              "RelativeToolTip": "Desktop\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-19T14:44:24.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\App.xaml",
+              "RelativeDocumentMoniker": "Desktop\\App.xaml",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\App.xaml",
+              "RelativeToolTip": "Desktop\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-19T14:42:39.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmptyStringToVisibilityConverter.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\Converters\\EmptyStringToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Desktop\\Converters\\EmptyStringToVisibilityConverter.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\Converters\\EmptyStringToVisibilityConverter.cs",
+              "RelativeToolTip": "Desktop\\Converters\\EmptyStringToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:42:04.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductCategory.cs",
-              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductCategory.cs",
-              "RelativeDocumentMoniker": "StoreLibrary\\Services\\ProductCategory.cs",
-              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\ProductCategory.cs",
-              "RelativeToolTip": "StoreLibrary\\Services\\ProductCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Title": "ShopPage.xaml",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\Desktop\\Pages\\ShopPage.xaml",
+              "RelativeDocumentMoniker": "Desktop\\Pages\\ShopPage.xaml",
+              "ToolTip": "F:\\PerfumeStoreTask\\Desktop\\Pages\\ShopPage.xaml",
+              "RelativeToolTip": "Desktop\\Pages\\ShopPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-19T14:33:40.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\OrderService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\OrderService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T13:05:58.458Z",
+              "WhenOpened": "2024-12-19T14:32:12.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PickupPointService.cs",
+              "DocumentMoniker": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
+              "RelativeDocumentMoniker": "StoreLibrary\\Services\\PickupPointService.cs",
+              "ToolTip": "F:\\PerfumeStoreTask\\StoreLibrary\\Services\\PickupPointService.cs",
+              "RelativeToolTip": "StoreLibrary\\Services\\PickupPointService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T14:23:23.471Z",
               "EditorCaption": ""
             }
           ]

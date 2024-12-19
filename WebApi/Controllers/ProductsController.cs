@@ -29,7 +29,7 @@ namespace WebApi.Controllers
         }
 
         // GET: api/Products/5
-        [HttpGet("{id}")]
+        [HttpGet("{article}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
@@ -44,8 +44,8 @@ namespace WebApi.Controllers
 
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
+        [HttpPut("{article}")]
+        public async Task<IActionResult> PutProduct(string id, Product product)
         {
             if (id != product.ProductArticleNumber)
             {
@@ -99,7 +99,7 @@ namespace WebApi.Controllers
         }
 
         // DELETE: api/Products/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{article}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
@@ -114,9 +114,9 @@ namespace WebApi.Controllers
             return NoContent();
         }
 
-        private bool ProductExists(int id)
+        private bool ProductExists(string article)
         {
-            return _context.Products.Any(e => e.ProductArticleNumber == id);
+            return _context.Products.Any(e => e.ProductArticleNumber == article);
         }
     }
 }

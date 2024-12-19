@@ -5,7 +5,7 @@ namespace StoreLibrary.Models;
 
 public partial class Product
 {
-    public int ProductArticleNumber { get; set; }
+    public string ProductArticleNumber { get; set; } = null!;
 
     public int ProductCategoryId { get; set; }
 

@@ -1,35 +1,52 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StoreLibrary.Data;
 using StoreLibrary.Models;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace StoreLibrary.Services
 {
     public class ProductService
     {
-        private readonly AppDbContext _context = new();
 
-        public async Task<List<Product>> GetAllProductsAsync()
-            => await _context.Products.ToListAsync();
+        private readonly HttpClient _client;
+        private readonly string _baseUrl = "http://localhost:5243/api/";
 
-        public async Task<Product?> GetProductByArticleAsync(int article)
-            => await _context.Products.FirstOrDefaultAsync(p => p.ProductArticleNumber == article);
+        public ProductService()
+        {
+            _client = new() { BaseAddress = new Uri(_baseUrl) };
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsAsync()
+        {
+            var response = await _client.GetAsync("Products/");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<IEnumerable<Product>>();
+        }
+        public async Task<Product> GetProductByIdAsync(string productArticle)
+        {
+            var response = await _client.GetAsync($"Products/{productArticle}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<Product>();
+        }
 
         public async Task AddProductAsync(Product product)
         {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+            var response = await _client.PostAsJsonAsync("Products/", product);
+            response.EnsureSuccessStatusCode();
         }
 
         public async Task UpdateProductAsync(Product product)
         {
-            _context.Products.Update(product);
-            await _context.SaveChangesAsync();
+            var response = await _client.PutAsJsonAsync($"Products/{product.ProductArticleNumber}", product);
+            response.EnsureSuccessStatusCode();
         }
 
-        public async Task RemoveProductAsync(Product product)
+        public async Task DeleteProductAsync(string productArticle)
         {
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
+            var response = await _client.DeleteAsync($"Products/{productArticle}");
+            response.EnsureSuccessStatusCode();
         }
+
     }
 }
