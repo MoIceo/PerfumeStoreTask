@@ -83,5 +83,11 @@ namespace Desktop.Pages
                 MessageBox.Show("Не загружено ни одного заказа для сохранения изменений.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
+        private void ReturnButton_Click(object sender, RoutedEventArgs e)
+        {
+            var currentUser = Application.Current.Properties["CurrentUser"] as User;
+            NavigationService.Navigate(new Store.Pages.ShopPage());
+        }
     }
 }

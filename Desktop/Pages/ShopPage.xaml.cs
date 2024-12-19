@@ -31,11 +31,17 @@ namespace Store.Pages
             if (currentUser != null)
             {
                 FullNameTextBlock.Text = $"{currentUser.UserSurname} {currentUser.UserName} {currentUser.UserPatronymic}";
+
+                if (currentUser.RoleId == 2 || currentUser.RoleId == 3)
+                    OrderPanelButton.Visibility = Visibility.Visible;
             }
             else
             {
                 FullNameTextBlock.Text = "Гость";
+                OrderPanelButton.Visibility = Visibility.Collapsed;
             }
+
+            
         }
         private void UpdateLoginButton(User? currentUser)
         {

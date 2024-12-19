@@ -31,7 +31,7 @@
             <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock x:Name="FullNameTextBlock" Text="Гость" Margin="0,0,10,0" VerticalAlignment="Center"/>
                 <Button x:Name="LoginButton" Content="Войти" Style="{StaticResource ActionButtonStyle}" Width="80" Height="30" Click="LoginButton_Click"/>
-                <Button x:Name="OrderPanelButton" Content="Менеджер заказов" Style="{StaticResource ActionButtonStyle}" Width="125" Height="30" Click="OrderPanelButton_Click"/>
+                <Button x:Name="OrderPanelButton" Content="Менеджер заказов" Style="{StaticResource ActionButtonStyle}" Width="125" Height="30" Click="OrderPanelButton_Click" Visibility="Collapsed"/>
             </StackPanel>
 
             <!-- Панель фильтров -->
