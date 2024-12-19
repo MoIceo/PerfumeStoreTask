@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 F:\PerfumeStoreTask\Desktop\App.xaml
-5-105420842
+6-87655966
 
 11-421558533
 228310084635
-MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\CreateOrderPage.xaml;Pages\OrderPage.xaml;Pages\ShopPage.xaml;
-
+MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\CreateOrderPage.xaml;Pages\OrderPage.xaml;Pages\ShopPage.xaml;Resources\Styles.xaml;
+resources\logo.png
 False
 

@@ -11,6 +11,14 @@
     <Page.DataContext>
         <viewModels:ShopPageViewModel/>
     </Page.DataContext>
+    <Page.Resources>
+        <ResourceDictionary>
+            <!-- Подключение стилей -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,23 +26,28 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <!-- Верхняя панель -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBlock x:Name="FullNameTextBlock" Text="Гость" Margin="0,0,10,0" VerticalAlignment="Center"/>
-            <Button Content="Выйти" Width="80" Height="30" Click="LogoutButton_Click" />
+            <Button Content="Выйти" Style="{StaticResource ActionButtonStyle}" Width="80" Height="30" Click="LogoutButton_Click"/>
         </StackPanel>
 
+        <!-- Панель фильтров -->
         <StackPanel Grid.Row="1" Orientation="Vertical" Margin="10">
             <TextBlock Text="{Binding DisplayedProductCount}" FontWeight="Bold" Margin="0,0,0,5"/>
             <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <!-- Поле для поиска -->
                 <Grid>
-                    <TextBox Width="200" Margin="0,0,10,0" Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Width="200" Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Text="Поиск..." IsHitTestVisible="False" Foreground="Gray" 
                                VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"
                                Visibility="{Binding SearchQuery, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
                 </Grid>
 
-                <ComboBox Width="200" ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding SelectedManufacturer}" />
+                <!-- Сортировка по производителю -->
+                <ComboBox Width="200" ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding SelectedManufacturer}"/>
 
+                <!-- Мин. цена -->
                 <Grid Margin="10,0,0,0">
                     <TextBox Width="80" Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Text="Мин. цена" IsHitTestVisible="False" Foreground="Gray" 
@@ -42,6 +55,7 @@
                                Visibility="{Binding MinPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
                 </Grid>
 
+                <!-- Макс. цена -->
                 <Grid Margin="10,0,0,0">
                     <TextBox Width="80" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}"/>
                     <TextBlock Text="Макс. цена" IsHitTestVisible="False" Foreground="Gray" 
@@ -49,15 +63,17 @@
                                Visibility="{Binding MaxPrice, Converter={StaticResource EmptyStringToVisibilityConverter}}"/>
                 </Grid>
 
+                <!-- Сортировка -->
                 <ComboBox Width="150" ItemsSource="{Binding SortOptions}" SelectedItem="{Binding SelectedSortOption}"/>
             </StackPanel>
         </StackPanel>
 
+        <!-- Список продуктов -->
         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding FilteredProducts}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border BorderBrush="Black" BorderThickness="1" Padding="10" Margin="5">
+                        <Border Style="{StaticResource ProductBorderStyle}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -82,7 +98,7 @@
                                         <TextBlock Text="{Binding ProductCost}"/>
                                     </StackPanel>
                                 </Grid>
-                                <Button Content="Заказать" Width="80" Height="30" HorizontalAlignment="Right" Grid.Column="1" Margin="10,0,0,0"/>
+                                <Button Content="Заказать" Style="{StaticResource ActionButtonStyle}" Grid.Column="1" Margin="10,0,0,0"/>
                             </Grid>
                         </Border>
                     </DataTemplate>

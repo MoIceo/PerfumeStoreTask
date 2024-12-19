@@ -62,6 +62,7 @@ namespace Store.ViewModels
             FilteredProducts = new ObservableCollection<Product>();
             Manufacturers = new ObservableCollection<string> { "Все производители" };
             SortOptions = new ObservableCollection<string> { "Цена по возрастанию", "Цена по убыванию" };
+            SelectedManufacturer = "Все производители";
 
             LoadProductsAsync();
         }
