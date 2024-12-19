@@ -4,14 +4,14 @@
     "F:\\PerfumeStoreTask\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "F:\\PerfumeStoreTask\\PerfumeLibrary\\PerfumeLibrary.csproj": {
+    "F:\\PerfumeStoreTask\\StoreLibrary\\StoreLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PerfumeStoreTask\\PerfumeLibrary\\PerfumeLibrary.csproj",
-        "projectName": "PerfumeLibrary",
-        "projectPath": "F:\\PerfumeStoreTask\\PerfumeLibrary\\PerfumeLibrary.csproj",
+        "projectUniqueName": "F:\\PerfumeStoreTask\\StoreLibrary\\StoreLibrary.csproj",
+        "projectName": "StoreLibrary",
+        "projectPath": "F:\\PerfumeStoreTask\\StoreLibrary\\StoreLibrary.csproj",
         "packagesPath": "C:\\Users\\miste\\.nuget\\packages\\",
-        "outputPath": "F:\\PerfumeStoreTask\\PerfumeLibrary\\obj\\",
+        "outputPath": "F:\\PerfumeStoreTask\\StoreLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Prog\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,13 +53,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.11, )"
             }
           },
           "imports": [
@@ -114,8 +114,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "F:\\PerfumeStoreTask\\PerfumeLibrary\\PerfumeLibrary.csproj": {
-                "projectPath": "F:\\PerfumeStoreTask\\PerfumeLibrary\\PerfumeLibrary.csproj"
+              "F:\\PerfumeStoreTask\\StoreLibrary\\StoreLibrary.csproj": {
+                "projectPath": "F:\\PerfumeStoreTask\\StoreLibrary\\StoreLibrary.csproj"
               }
             }
           }
@@ -136,6 +136,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

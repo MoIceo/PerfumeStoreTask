@@ -1,0 +1,15 @@
+F:\PerfumeStoreTask\StoreLibrary\bin\Debug\net8.0-windows\StoreLibrary.deps.json
+F:\PerfumeStoreTask\StoreLibrary\bin\Debug\net8.0-windows\StoreLibrary.runtimeconfig.json
+F:\PerfumeStoreTask\StoreLibrary\bin\Debug\net8.0-windows\StoreLibrary.dll
+F:\PerfumeStoreTask\StoreLibrary\bin\Debug\net8.0-windows\StoreLibrary.pdb
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.csproj.AssemblyReference.cache
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.GeneratedMSBuildEditorConfig.editorconfig
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.AssemblyInfoInputs.cache
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.AssemblyInfo.cs
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.csproj.CoreCompileInputs.cache
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.sourcelink.json
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.dll
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\refint\StoreLibrary.dll
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.pdb
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\StoreLibrary.genruntimeconfig.cache
+F:\PerfumeStoreTask\StoreLibrary\obj\Debug\net8.0-windows\ref\StoreLibrary.dll

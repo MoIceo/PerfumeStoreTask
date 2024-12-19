@@ -8,8 +8,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PerfumeLibrary\PerfumeLibrary.csproj" />
-  </ItemGroup>
-
 </Project>
