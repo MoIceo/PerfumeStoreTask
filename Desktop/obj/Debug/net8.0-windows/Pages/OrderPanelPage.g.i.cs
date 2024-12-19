@@ -92,7 +92,7 @@ namespace Desktop.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Desktop;component/pages/orderpanelpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Desktop;V1.0.0.0;component/pages/orderpanelpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\OrderPanelPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
