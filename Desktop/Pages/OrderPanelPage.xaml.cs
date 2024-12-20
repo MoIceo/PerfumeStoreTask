@@ -52,8 +52,8 @@ namespace Desktop.Pages
 
                 if (_currentOrder.UserId != null)
                 {
-                    var user = await _userService.GetUserByIdAsync(_currentOrder.UserId);
-                    CustomerNameTextBlock.Text = user?.UserName ?? "N/A";
+                    var user = await _userService.GetUserByIdAsync(_currentOrder.UserId.Value);
+                    CustomerNameTextBlock.Text = $"{user?.UserSurname} {user?.UserName} {user?.UserPatronymic}"  ?? "N/A";
                 }
                 else
                 {

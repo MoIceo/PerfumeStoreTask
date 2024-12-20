@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace StoreLibrary.Models;
 
@@ -7,7 +8,7 @@ public partial class Order
 {
     public int OrderId { get; set; }
 
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
 
     public int PickupPointId { get; set; }
 
@@ -19,9 +20,11 @@ public partial class Order
 
     public short OrderPickupCode { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();
 
-    public virtual PickupPoint PickupPoint { get; set; } = null!;
-
-    public virtual User User { get; set; } = null!;
+    [JsonIgnore]
+    public virtual PickupPoint? PickupPoint { get; set; } = null!;
+    [JsonIgnore]
+    public virtual User? User { get; set; } = null!;
 }
